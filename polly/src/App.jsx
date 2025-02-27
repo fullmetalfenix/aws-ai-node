@@ -58,12 +58,11 @@ function App() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
           height: "350px",
           width: "600px",
           background: "#4bff36",
           margin: "auto",
-          marginTop: "50px",
+          marginTop: "30px",
           borderRadius: "10px",
           boxShadow: "-15px -15px 2px #FF9539, 15px 15px 2px #02FEE5"
         }}
@@ -71,14 +70,15 @@ function App() {
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Enter text to synthesize"
+          placeholder="Enter speach for Polly"
           style={{
             height: "102px",
             width: "400px",
+            marginTop: "30px",
             fontSize: "18px",
             borderRadius: "17px",
             padding: "12px 25px",
-            marginBottom: "20px",
+            marginBottom: "30px",
           }}
         />
         <button 
@@ -88,7 +88,7 @@ function App() {
           fontSize: "18px",
           borderRadius: "17px",
           padding: "12px 25px",
-          marginBottom: "20px",
+          marginBottom: "30px",
           background: "#5E57FF",
           color: "#ffffff",
           border: "none",
