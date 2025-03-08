@@ -22,7 +22,7 @@ const client = new LexRuntimeV2Client({
 
 const LexChat = () => {
   const [inputText, setInputText] = useState('');
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([{ sender: 'reserve-o-bot', text: "Type 'Hello' to start your reservation." }]);
 
   // Just for development - you would have to use a better solution here
   const [sessionId] = useState(`test-session-${Date.now()}`);
@@ -59,8 +59,8 @@ const LexChat = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div id="app-case">
+      <div id="messages">
         {messages.map((message, index) => (
           <div key={index} className={message.sender}>
             <strong>{message.sender}:</strong> {message.text}
