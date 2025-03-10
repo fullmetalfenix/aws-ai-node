@@ -5,7 +5,12 @@ import LexChat from "./LexChat";
 function App() {
   return (
     <>
-      <LexChat />
+      <details id="display-bot">
+        <summary>Use Reserve-O-Bot</summary>
+        <p>
+          <LexChat />
+        </p>
+      </details>
     </>
   );
 }

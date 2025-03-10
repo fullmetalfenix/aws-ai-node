@@ -1,7 +1,12 @@
 # Amazon Lex Chatbot
 
-![screenshot goes here](./not-taken-yet.png)
+![screenshot goes here](./lex.png)
 
+### Project Summary
+
+This project was undertaken to better familiarize myself with deploying an Amazon Web Services chatbot through there Lex service. I made a bot that takes a reservation for a user and holds it for 24 hours. Note: it communicates with the user, taking input and confirming orders but I did not actually hook it to anything to hold the reservation as this is just a demo.
+
+### Project details
 
 This was a little bit different as you spend more time in the AWS console than you do in the code. You have to go to the lex dashboard and click 'create bot'. I used a traditional bot for this project -> name -> description then selected "Create a role with basic Amazon Lex permissions.". Please read C.O.P.P.A. and select for your use case (I did not need it as I was just intending to connect in development). Note: The language of the bot menus took the most time to learn in this whole project. Once my bot was created I went into the bot menu and set up some "intents". "Intents" are basically tracts that you want your bot to be able to go down - they map to actions you want your bot to preform. You can connect Lex to Lambda, DynamoDB, S3 etc. to do everything from appointment scheduling, answering queries, submitting orders and more but here I just set it up to respond to customer's in a mock reservation system for a product. I did that with Three intents:
 

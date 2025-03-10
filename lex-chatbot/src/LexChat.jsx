@@ -22,7 +22,7 @@ const client = new LexRuntimeV2Client({
 
 const LexChat = () => {
   const [inputText, setInputText] = useState('');
-  const [messages, setMessages] = useState([{ sender: 'reserve-o-bot', text: "Type 'Hello' to start your reservation." }]);
+  const [messages, setMessages] = useState([{ sender: 'Reserve-O-Bot', text: "Type 'Hello' to start your reservation." }]);
 
   // Just for development - you would have to use a better solution here
   const [sessionId] = useState(`test-session-${Date.now()}`);
@@ -38,7 +38,7 @@ const LexChat = () => {
     e.preventDefault();
     if (!inputText.trim()) return;
   
-    const userMessage = { sender: 'user', text: inputText };
+    const userMessage = { sender: 'User', text: inputText };
     // this is to keep track of the messages you (the user) sent and make it look like a chat
     setMessages((prevMessages) => [...prevMessages, userMessage]);
   
@@ -49,7 +49,7 @@ const LexChat = () => {
   
     try {
       const response = await client.send(command);
-      const botMessages = response.messages.map((msg) => ({ sender: 'bot', text: msg.content }));
+      const botMessages = response.messages.map((msg) => ({ sender: 'Reserve-O-Bot', text: msg.content }));
       setMessages((prevMessages) => [...prevMessages, ...botMessages]);
     } catch (error) {
       console.error("Error:", error);
