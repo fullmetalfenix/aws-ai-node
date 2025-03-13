@@ -7,6 +7,8 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@aws-sdk/client-rekognition": "^3.758.0",
+		"aws-sdk": "^2.1692.0",
 		"preact": "^10.25.3"
 	},
 	"devDependencies": {

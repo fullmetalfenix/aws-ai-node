@@ -1,12 +1,15 @@
 import { render } from 'preact';
-
-
 import './style.css';
+
+import Header from './Header';
+import CelebrityRecognition from './CelebrityRecognition';
+
 
 export function App() {
 	return (
 		<div>
-			<h1>Amazon Rekognition</h1>
+			<Header />
+			<CelebrityRecognition />
 		</div>
 	);
 }

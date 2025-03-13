@@ -1,0 +1,49 @@
+:root{
+	--background-color: #DBA506;
+	--secondary-color:  #F2DB83;
+}
+body{
+	background: var(--background-color);
+	color: black;
+	margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin: 0px auto;
+	background: black;
+	font-size: 46px;
+    font-family: fantasy;
+}
+
+#header-inner-container{
+	width:1200px;
+	color: var(--secondary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px auto;
+}
+
+header h1{
+	font-size: 42px;
+}
+header img{
+	max-height: 80px;
+}
+
+input[type="file"]{
+	padding: 10px;
+	margin: 20px 0px;
+	border-radius: 5px;
+	border: none;
+	background: var(--secondary-color);
+	color: black;
+	font-size: 16px;
+}
+
+h2{
+	font-family: fantasy;
+	letter-spacing: 1.05px;
+}
